@@ -148,3 +148,76 @@
 2026-03-27 00:46:32.925 UTC [6655] LOG:  checkpoint starting: shutdown immediate
 2026-03-27 00:46:32.994 UTC [6655] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.077 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
 2026-03-27 00:46:32.998 UTC [6654] LOG:  database system is shut down
+2026-04-21 22:27:53.723 UTC [1710] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-21 22:27:53.726 UTC [1710] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-21 22:27:53.732 UTC [1710] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-21 22:27:53.740 UTC [1713] LOG:  database system was shut down at 2026-03-27 00:46:32 UTC
+2026-04-21 22:27:53.755 UTC [1710] LOG:  database system is ready to accept connections
+2026-04-21 22:32:53.840 UTC [1711] LOG:  checkpoint starting: time
+2026-04-21 22:32:54.361 UTC [1711] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.507 s, sync=0.005 s, total=0.521 s; sync files=7, longest=0.003 s, average=0.001 s; distance=2 kB, estimate=2 kB
+2026-04-21 22:39:13.740 UTC [2431] ERROR:  relation "movies_favorite" does not exist at character 22
+2026-04-21 22:39:13.740 UTC [2431] STATEMENT:  SELECT 1 AS "a" FROM "movies_favorite" WHERE ("movies_favorite"."movie_id" = 4 AND "movies_favorite"."user_id" = 1) LIMIT 1
+2026-04-21 22:39:13.755 UTC [2431] ERROR:  relation "movies_favorite" does not exist at character 125
+2026-04-21 22:39:13.755 UTC [2431] STATEMENT:  SELECT "movies_favorite"."id", "movies_favorite"."user_id", "movies_favorite"."movie_id", "movies_favorite"."added_at" FROM "movies_favorite" WHERE ("movies_favorite"."movie_id" = 4 AND "movies_favorite"."user_id" = 1) LIMIT 21
+2026-04-21 22:39:23.175 UTC [2435] ERROR:  relation "movies_favorite" does not exist at character 22
+2026-04-21 22:39:23.175 UTC [2435] STATEMENT:  SELECT 1 AS "a" FROM "movies_favorite" WHERE ("movies_favorite"."movie_id" = 1 AND "movies_favorite"."user_id" = 1) LIMIT 1
+2026-04-21 22:39:23.187 UTC [2435] ERROR:  relation "movies_favorite" does not exist at character 125
+2026-04-21 22:39:23.187 UTC [2435] STATEMENT:  SELECT "movies_favorite"."id", "movies_favorite"."user_id", "movies_favorite"."movie_id", "movies_favorite"."added_at" FROM "movies_favorite" WHERE ("movies_favorite"."movie_id" = 1 AND "movies_favorite"."user_id" = 1) LIMIT 21
+2026-04-21 22:42:53.533 UTC [1711] LOG:  checkpoint starting: time
+2026-04-21 22:42:59.969 UTC [1711] LOG:  checkpoint complete: wrote 65 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.424 s, sync=0.003 s, total=6.436 s; sync files=57, longest=0.002 s, average=0.001 s; distance=248 kB, estimate=248 kB
+2026-04-21 22:45:33.154 UTC [1710] LOG:  received smart shutdown request
+2026-04-21 22:45:33.182 UTC [1710] LOG:  received SIGHUP, reloading configuration files
+2026-04-21 22:45:33.204 UTC [1710] LOG:  background worker "logical replication launcher" (PID 1716) exited with exit code 1
+2026-04-21 22:45:33.217 UTC [1711] LOG:  shutting down
+2026-04-21 22:45:33.222 UTC [1711] LOG:  checkpoint starting: shutdown immediate
+2026-04-21 22:45:33.258 UTC [1711] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.041 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=223 kB
+2026-04-21 22:45:33.273 UTC [1710] LOG:  database system is shut down
+2026-04-22 23:18:34.873 UTC [17297] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-22 23:18:34.874 UTC [17297] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-22 23:18:34.878 UTC [17297] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-22 23:18:34.887 UTC [17300] LOG:  database system was shut down at 2026-04-21 22:45:33 UTC
+2026-04-22 23:18:34.898 UTC [17297] LOG:  database system is ready to accept connections
+2026-04-22 23:23:34.985 UTC [17298] LOG:  checkpoint starting: time
+2026-04-22 23:23:35.105 UTC [17298] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.004 s, total=0.121 s; sync files=3, longest=0.002 s, average=0.002 s; distance=7 kB, estimate=7 kB
+2026-04-23 02:38:46.305 UTC [17297] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 02:38:46.308 UTC [17297] LOG:  received smart shutdown request
+2026-04-23 02:38:46.317 UTC [17297] LOG:  background worker "logical replication launcher" (PID 17303) exited with exit code 1
+2026-04-23 02:38:46.317 UTC [17298] LOG:  shutting down
+2026-04-23 02:38:46.327 UTC [17298] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 02:38:46.405 UTC [17298] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.031 s, sync=0.001 s, total=0.088 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=7 kB
+2026-04-23 02:38:46.417 UTC [17297] LOG:  database system is shut down
+2026-04-23 21:18:30.411 UTC [1433] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-23 21:18:30.412 UTC [1433] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-23 21:18:30.418 UTC [1433] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-23 21:18:30.427 UTC [1436] LOG:  database system was shut down at 2026-04-23 02:38:46 UTC
+2026-04-23 21:18:30.436 UTC [1433] LOG:  database system is ready to accept connections
+2026-04-23 21:20:29.470 UTC [1779] FATAL:  lock file "postmaster.pid" already exists
+2026-04-23 21:20:29.470 UTC [1779] HINT:  Is another postmaster (PID 1433) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-23 21:23:30.526 UTC [1434] LOG:  checkpoint starting: time
+2026-04-23 21:23:32.651 UTC [1434] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.111 s, sync=0.004 s, total=2.125 s; sync files=19, longest=0.003 s, average=0.001 s; distance=14 kB, estimate=14 kB
+2026-04-23 21:28:30.728 UTC [1434] LOG:  checkpoint starting: time
+2026-04-23 21:28:32.750 UTC [1434] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.010 s, sync=0.004 s, total=2.022 s; sync files=21, longest=0.003 s, average=0.001 s; distance=12 kB, estimate=14 kB
+2026-04-23 21:33:30.800 UTC [1434] LOG:  checkpoint starting: time
+2026-04-23 21:33:33.425 UTC [1434] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.612 s, sync=0.004 s, total=2.625 s; sync files=27, longest=0.003 s, average=0.001 s; distance=27 kB, estimate=27 kB
+2026-04-23 21:38:30.471 UTC [1434] LOG:  checkpoint starting: time
+2026-04-23 21:38:30.686 UTC [1434] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.203 s, sync=0.003 s, total=0.215 s; sync files=3, longest=0.003 s, average=0.001 s; distance=0 kB, estimate=24 kB
+2026-04-23 21:43:37.710 UTC [1434] LOG:  checkpoint starting: time
+2026-04-23 21:45:35.209 UTC [1434] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=72.433 s, sync=0.218 s, total=123.873 s; sync files=15, longest=0.149 s, average=0.012 s; distance=11 kB, estimate=23 kB
+2026-04-23 21:46:01.447 UTC [1433] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 21:46:01.529 UTC [1433] LOG:  received smart shutdown request
+2026-04-23 21:46:01.564 UTC [1433] LOG:  background worker "logical replication launcher" (PID 1439) exited with exit code 1
+2026-04-23 21:46:01.564 UTC [1434] LOG:  shutting down
+2026-04-23 21:46:01.571 UTC [1434] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 21:46:01.643 UTC [1434] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.078 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=20 kB
+2026-04-23 21:46:01.663 UTC [1433] LOG:  database system is shut down
+2026-04-23 21:48:46.880 UTC [1353] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-23 21:48:46.882 UTC [1353] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-23 21:48:46.887 UTC [1353] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-23 21:48:46.895 UTC [1356] LOG:  database system was shut down at 2026-04-23 21:46:01 UTC
+2026-04-23 21:48:46.909 UTC [1353] LOG:  database system is ready to accept connections
+2026-04-23 21:53:46.969 UTC [1354] LOG:  checkpoint starting: time
+2026-04-23 21:53:46.985 UTC [1354] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.002 s, total=0.016 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-23 22:00:56.251 UTC [1801] ERROR:  integer out of range
+2026-04-23 22:00:56.251 UTC [1801] STATEMENT:  INSERT INTO "movies_movie" ("title", "overview", "release_date", "running_time", "budget", "tmdb_id", "revenue", "poster_path") VALUES ('Avengers: Endgame', 'Después de los devastadores eventos de los Vengadores: Infinity War (2018), el universo está en ruinas. Con la ayuda de los aliados restantes, los Vengadores se reúnen una vez más para revertir las acciones de Thanos y restaurar el equilibrio del universo.', '2019-04-24'::date, 180, 356000000, 299534, 2799439100, 'https://image.tmdb.org/t/p/w500/br6krBFpaYmCSglLBWRuhui7tPc.jpg') RETURNING "movies_movie"."id"
+2026-04-23 22:03:47.172 UTC [1354] LOG:  checkpoint starting: time
+2026-04-23 22:03:54.149 UTC [1354] LOG:  checkpoint complete: wrote 71 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.951 s, sync=0.002 s, total=6.977 s; sync files=37, longest=0.002 s, average=0.001 s; distance=836 kB, estimate=836 kB
