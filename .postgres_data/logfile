@@ -221,3 +221,155 @@
 2026-04-23 22:00:56.251 UTC [1801] STATEMENT:  INSERT INTO "movies_movie" ("title", "overview", "release_date", "running_time", "budget", "tmdb_id", "revenue", "poster_path") VALUES ('Avengers: Endgame', 'Después de los devastadores eventos de los Vengadores: Infinity War (2018), el universo está en ruinas. Con la ayuda de los aliados restantes, los Vengadores se reúnen una vez más para revertir las acciones de Thanos y restaurar el equilibrio del universo.', '2019-04-24'::date, 180, 356000000, 299534, 2799439100, 'https://image.tmdb.org/t/p/w500/br6krBFpaYmCSglLBWRuhui7tPc.jpg') RETURNING "movies_movie"."id"
 2026-04-23 22:03:47.172 UTC [1354] LOG:  checkpoint starting: time
 2026-04-23 22:03:54.149 UTC [1354] LOG:  checkpoint complete: wrote 71 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.951 s, sync=0.002 s, total=6.977 s; sync files=37, longest=0.002 s, average=0.001 s; distance=836 kB, estimate=836 kB
+2026-04-23 22:18:47.386 UTC [1354] LOG:  checkpoint starting: time
+2026-04-23 22:18:48.216 UTC [1354] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.807 s, sync=0.004 s, total=0.831 s; sync files=9, longest=0.003 s, average=0.001 s; distance=10 kB, estimate=753 kB
+2026-04-23 22:24:05.458 UTC [1353] LOG:  received smart shutdown request
+2026-04-23 22:24:05.483 UTC [1353] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 22:24:05.505 UTC [1353] LOG:  background worker "logical replication launcher" (PID 1359) exited with exit code 1
+2026-04-23 22:24:05.505 UTC [1354] LOG:  shutting down
+2026-04-23 22:24:05.517 UTC [1354] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 22:24:05.558 UTC [1354] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.053 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=678 kB
+2026-04-23 22:24:05.589 UTC [1353] LOG:  database system is shut down
+2026-04-24 17:29:55.563 UTC [1484] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 17:29:55.564 UTC [1484] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 17:29:55.569 UTC [1484] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 17:29:55.577 UTC [1487] LOG:  database system was shut down at 2026-04-23 22:24:05 UTC
+2026-04-24 17:29:55.590 UTC [1484] LOG:  database system is ready to accept connections
+2026-04-24 17:34:55.657 UTC [1485] LOG:  checkpoint starting: time
+2026-04-24 17:34:55.675 UTC [1485] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.018 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 17:59:56.083 UTC [1485] LOG:  checkpoint starting: time
+2026-04-24 17:59:56.600 UTC [1485] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.004 s, total=0.517 s; sync files=6, longest=0.003 s, average=0.001 s; distance=4 kB, estimate=4 kB
+2026-04-24 18:09:56.750 UTC [1485] LOG:  checkpoint starting: time
+2026-04-24 18:09:57.566 UTC [1485] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.804 s, sync=0.004 s, total=0.817 s; sync files=9, longest=0.003 s, average=0.001 s; distance=10 kB, estimate=10 kB
+2026-04-24 18:10:05.163 UTC [1484] LOG:  received smart shutdown request
+2026-04-24 18:10:05.209 UTC [1484] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 18:10:05.229 UTC [1484] LOG:  background worker "logical replication launcher" (PID 1490) exited with exit code 1
+2026-04-24 18:10:05.236 UTC [1485] LOG:  shutting down
+2026-04-24 18:10:05.241 UTC [1485] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 18:10:05.282 UTC [1485] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.046 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=9 kB
+2026-04-24 18:10:05.306 UTC [1484] LOG:  database system is shut down
+2026-04-24 18:18:25.287 UTC [1015] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 18:18:25.288 UTC [1015] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 18:18:25.294 UTC [1015] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 18:18:25.302 UTC [1018] LOG:  database system was shut down at 2026-04-24 18:10:05 UTC
+2026-04-24 18:18:25.313 UTC [1015] LOG:  database system is ready to accept connections
+2026-04-24 18:23:25.398 UTC [1016] LOG:  checkpoint starting: time
+2026-04-24 18:23:26.220 UTC [1016] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.806 s, sync=0.005 s, total=0.823 s; sync files=10, longest=0.003 s, average=0.001 s; distance=10 kB, estimate=10 kB
+2026-04-24 18:49:48.480 UTC [2487] FATAL:  lock file "postmaster.pid" already exists
+2026-04-24 18:49:48.480 UTC [2487] HINT:  Is another postmaster (PID 1015) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-24 18:49:58.753 UTC [2491] FATAL:  lock file "postmaster.pid" already exists
+2026-04-24 18:49:58.753 UTC [2491] HINT:  Is another postmaster (PID 1015) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-24 18:50:04.028 UTC [1015] LOG:  received fast shutdown request
+2026-04-24 18:50:04.032 UTC [1015] LOG:  aborting any active transactions
+2026-04-24 18:50:04.037 UTC [1015] LOG:  background worker "logical replication launcher" (PID 1021) exited with exit code 1
+2026-04-24 18:50:04.037 UTC [1016] LOG:  shutting down
+2026-04-24 18:50:04.041 UTC [1016] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 18:50:04.052 UTC [1016] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.003 s, total=0.015 s; sync files=1, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=9 kB
+2026-04-24 18:50:04.057 UTC [1015] LOG:  database system is shut down
+2026-04-24 18:50:08.821 UTC [2498] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 18:50:08.821 UTC [2498] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 18:50:08.827 UTC [2498] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 18:50:08.839 UTC [2501] LOG:  database system was shut down at 2026-04-24 18:50:04 UTC
+2026-04-24 18:50:08.850 UTC [2498] LOG:  database system is ready to accept connections
+2026-04-24 18:55:08.926 UTC [2499] LOG:  checkpoint starting: time
+2026-04-24 18:55:08.942 UTC [2499] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.017 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 19:00:09.028 UTC [2499] LOG:  checkpoint starting: time
+2026-04-24 19:00:12.854 UTC [2499] LOG:  checkpoint complete: wrote 39 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.814 s, sync=0.003 s, total=3.827 s; sync files=31, longest=0.002 s, average=0.001 s; distance=214 kB, estimate=214 kB
+2026-04-24 19:15:10.107 UTC [2499] LOG:  checkpoint starting: time
+2026-04-24 19:15:10.924 UTC [2499] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.804 s, sync=0.004 s, total=0.818 s; sync files=7, longest=0.003 s, average=0.001 s; distance=25 kB, estimate=195 kB
+2026-04-24 19:20:11.006 UTC [2499] LOG:  checkpoint starting: time
+2026-04-24 19:20:11.622 UTC [2499] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.604 s, sync=0.004 s, total=0.617 s; sync files=4, longest=0.003 s, average=0.001 s; distance=43 kB, estimate=180 kB
+2026-04-24 19:25:11.722 UTC [2499] LOG:  checkpoint starting: time
+2026-04-24 19:25:17.793 UTC [2499] LOG:  checkpoint complete: wrote 61 buffers (0.4%); 1 WAL file(s) added, 0 removed, 0 recycled; write=6.020 s, sync=0.003 s, total=6.072 s; sync files=17, longest=0.003 s, average=0.001 s; distance=592 kB, estimate=592 kB
+2026-04-24 19:37:35.824 UTC [2503] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 19:38:49.341 UTC [4125] WARNING:  autovacuum worker started without a worker entry
+2026-04-24 19:41:03.492 UTC [2503] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 19:46:53.182 UTC [2503] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 19:48:29.887 UTC [4139] WARNING:  autovacuum worker started without a worker entry
+2026-04-24 19:48:41.212 UTC [4141] FATAL:  sorry, too many clients already
+2026-04-24 19:51:05.314 UTC [2503] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 19:53:00.142 UTC [4146] WARNING:  autovacuum worker started without a worker entry
+2026-04-24 19:54:26.288 UTC [2503] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 19:59:44.877 UTC [4150] FATAL:  sorry, too many clients already
+2026-04-24 21:18:12.376 UTC [1096] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 21:18:12.378 UTC [1096] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 21:18:12.383 UTC [1096] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 21:18:12.391 UTC [1099] LOG:  database system was interrupted; last known up at 2026-04-24 19:25:17 UTC
+2026-04-24 21:18:12.413 UTC [1099] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-04-24 21:18:12.420 UTC [1099] LOG:  redo starts at 0/1C4B7D8
+2026-04-24 21:18:12.420 UTC [1099] LOG:  invalid record length at 0/1C4B8C0: wanted 24, got 0
+2026-04-24 21:18:12.420 UTC [1099] LOG:  redo done at 0/1C4B888 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-04-24 21:18:12.425 UTC [1097] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-04-24 21:18:12.442 UTC [1097] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.019 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 21:18:12.448 UTC [1096] LOG:  database system is ready to accept connections
+2026-04-24 21:18:19.252 UTC [1106] FATAL:  lock file "postmaster.pid" already exists
+2026-04-24 21:18:19.252 UTC [1106] HINT:  Is another postmaster (PID 1096) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-24 21:20:40.018 UTC [1096] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 21:20:40.043 UTC [1096] LOG:  received smart shutdown request
+2026-04-24 21:20:40.046 UTC [1096] LOG:  background worker "logical replication launcher" (PID 1102) exited with exit code 1
+2026-04-24 21:20:40.047 UTC [1097] LOG:  shutting down
+2026-04-24 21:20:40.050 UTC [1097] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 21:20:40.079 UTC [1097] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.033 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2026-04-24 21:20:40.098 UTC [1096] LOG:  database system is shut down
+2026-04-24 21:24:58.025 UTC [1371] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 21:24:58.029 UTC [1371] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 21:24:58.035 UTC [1371] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 21:24:58.047 UTC [1375] LOG:  database system was shut down at 2026-04-24 21:20:40 UTC
+2026-04-24 21:24:58.065 UTC [1371] LOG:  database system is ready to accept connections
+2026-04-24 21:25:10.686 UTC [1507] FATAL:  lock file "postmaster.pid" already exists
+2026-04-24 21:25:10.686 UTC [1507] HINT:  Is another postmaster (PID 1371) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-24 21:29:58.100 UTC [1373] LOG:  checkpoint starting: time
+2026-04-24 21:29:58.968 UTC [1373] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.817 s, sync=0.013 s, total=0.865 s; sync files=7, longest=0.004 s, average=0.002 s; distance=9 kB, estimate=9 kB
+2026-04-24 21:33:40.380 UTC [1377] WARNING:  autovacuum worker took too long to start; canceled
+2026-04-24 21:40:56.209 UTC [1473] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 21:40:56.212 UTC [1473] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 21:40:56.217 UTC [1473] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 21:40:56.226 UTC [1476] LOG:  database system was interrupted; last known up at 2026-04-24 21:29:58 UTC
+2026-04-24 21:40:56.242 UTC [1476] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-04-24 21:40:56.250 UTC [1476] LOG:  redo starts at 0/1C4DF40
+2026-04-24 21:40:56.250 UTC [1476] LOG:  invalid record length at 0/1C4E040: wanted 24, got 0
+2026-04-24 21:40:56.250 UTC [1476] LOG:  redo done at 0/1C4DFF0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-04-24 21:40:56.256 UTC [1474] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-04-24 21:40:56.272 UTC [1474] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.019 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 21:40:56.279 UTC [1473] LOG:  database system is ready to accept connections
+2026-04-24 21:50:56.450 UTC [1474] LOG:  checkpoint starting: time
+2026-04-24 21:50:56.965 UTC [1474] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.504 s, sync=0.004 s, total=0.516 s; sync files=6, longest=0.003 s, average=0.001 s; distance=5 kB, estimate=5 kB
+2026-04-24 21:51:51.944 UTC [1473] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 21:51:51.979 UTC [1473] LOG:  received smart shutdown request
+2026-04-24 21:51:52.009 UTC [1473] LOG:  background worker "logical replication launcher" (PID 1479) exited with exit code 1
+2026-04-24 21:51:52.009 UTC [1474] LOG:  shutting down
+2026-04-24 21:51:52.014 UTC [1474] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 21:51:52.118 UTC [1474] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.007 s, total=0.109 s; sync files=6, longest=0.006 s, average=0.002 s; distance=6 kB, estimate=6 kB
+2026-04-24 21:51:52.125 UTC [1473] LOG:  database system is shut down
+2026-04-24 21:55:39.530 UTC [1016] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 21:55:39.532 UTC [1016] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 21:55:39.536 UTC [1016] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 21:55:39.544 UTC [1019] LOG:  database system was shut down at 2026-04-24 21:51:52 UTC
+2026-04-24 21:55:39.556 UTC [1016] LOG:  database system is ready to accept connections
+2026-04-24 22:00:39.598 UTC [1017] LOG:  checkpoint starting: time
+2026-04-24 22:00:40.119 UTC [1017] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.004 s, total=0.522 s; sync files=7, longest=0.003 s, average=0.001 s; distance=7 kB, estimate=7 kB
+2026-04-24 22:03:50.754 UTC [1016] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 22:03:50.805 UTC [1016] LOG:  received smart shutdown request
+2026-04-24 22:03:50.822 UTC [1016] LOG:  background worker "logical replication launcher" (PID 1022) exited with exit code 1
+2026-04-24 22:03:50.822 UTC [1017] LOG:  shutting down
+2026-04-24 22:03:50.831 UTC [1017] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 22:03:50.859 UTC [1017] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.037 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=6 kB
+2026-04-24 22:03:50.882 UTC [1016] LOG:  database system is shut down
+2026-04-24 22:07:20.102 UTC [1481] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 22:07:20.105 UTC [1481] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 22:07:20.111 UTC [1481] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 22:07:20.120 UTC [1484] LOG:  database system was shut down at 2026-04-24 22:03:50 UTC
+2026-04-24 22:07:20.130 UTC [1481] LOG:  database system is ready to accept connections
+2026-04-24 22:07:26.493 UTC [1530] FATAL:  lock file "postmaster.pid" already exists
+2026-04-24 22:07:26.493 UTC [1530] HINT:  Is another postmaster (PID 1481) running in data directory "/home/ubuntu/Proyecto/.postgres_data"?
+2026-04-24 22:12:20.201 UTC [1482] LOG:  checkpoint starting: time
+2026-04-24 22:12:20.218 UTC [1482] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.002 s, total=0.019 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 22:17:20.301 UTC [1482] LOG:  checkpoint starting: time
+2026-04-24 22:17:21.823 UTC [1482] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.509 s, sync=0.004 s, total=1.522 s; sync files=16, longest=0.003 s, average=0.001 s; distance=15 kB, estimate=15 kB
+2026-04-25 00:25:09.956 UTC [1481] LOG:  received SIGHUP, reloading configuration files
+2026-04-25 00:25:09.987 UTC [1481] LOG:  received smart shutdown request
+2026-04-25 00:25:10.005 UTC [1481] LOG:  background worker "logical replication launcher" (PID 1487) exited with exit code 1
+2026-04-25 00:25:10.006 UTC [1482] LOG:  shutting down
+2026-04-25 00:25:10.017 UTC [1482] LOG:  checkpoint starting: shutdown immediate
+2026-04-25 00:25:10.038 UTC [1482] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.032 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=14 kB
+2026-04-25 00:25:10.061 UTC [1481] LOG:  database system is shut down
